@@ -21,7 +21,6 @@
 function binary_out = celltrack(filename, min_cell_dia,...
     max_cell_dia, pixel2um)
 
-%filename = '747'; %temporary, for testing only
 minimum_area = (0.5*min_cell_dia/pixel2um)^2*pi(); %default 30
 maximum_area = (0.5*max_cell_dia/pixel2um)^2*pi(); %default 150 better to define based on expected cell size and resoulution
 %pixel2um = 1.6; % how many uM each pixel is? def1.6
